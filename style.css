@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  /* border: 1px solid red; */
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 300px 1fr 50px;
+  height: 100vh;
+  background-color: #ffffff;
+  color: #ffffff;
+  position: relative;
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  background-color: #132f4b;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.nav-items > ul {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  background-image: url(sun-tree.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-container {
+  width: 800px;
+  display: flex;
+  gap: 50px;
+  margin: 0 auto;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-text > h2 {
+  text-shadow: 1px 1px #000000;
+  margin-bottom: 2rem;
+}
+
+.header-text > p {
+  text-shadow: 1px 1px #000000;
+}
+
+.main-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  font-weight: bolder;
+  border: none;
+  width: 200px;
+  height: 50px;
+  background-color: #748f2a;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #b1ca6c;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  width: 600px;
+  background-color: #ffffff;
+  border-top: 5px solid #132f4b;
+  border-bottom: 5px solid #132f4b;
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+  padding: 0px 50px 0px 50px;
+  z-index: 10;
+}
+
+.close-modal {
+  font-weight: bolder;
+  border: none;
+  height: 25px;
+  width: 25px;
+  align-self: flex-end;
+  transition: 0.3s;
+}
+
+.close-modal:hover {
+  background-color: #aaaaaa;
+}
+
+.modal > h2 {
+  margin-bottom: 2rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  z-index: 9;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #132f4b;
+}
